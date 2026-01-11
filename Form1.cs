@@ -49,48 +49,30 @@ namespace frmCalculette
         // ===================== VIRGULE =====================
         private void bntVigule_Click(object sender, EventArgs e)
         {
-            if (estNouveauCalcul)
-            {
-                txtResult.Text = "0,";
-                estNouveauCalcul = false;
-                return;
-            }
-
-            txtResult.Text += ",";
+           
         }
 
         // ===================== OPERATEURS =====================
-        private void AjouterOperateur(string op)
-        {
-            if (estNouveauCalcul)
-                estNouveauCalcul = false;
-
-            char dernierCaractere = txtResult.Text[txtResult.Text.Length - 1];
-
-            if ("+-×÷".Contains(dernierCaractere.ToString()))
-                return;
-
-            txtResult.Text += op;
-        }
+        
 
         private void bntPlus_Click(object sender, EventArgs e)
         {
-            AjouterOperateur("+");
+           
         }
 
         private void bntMoin_Click(object sender, EventArgs e)
         {
-            AjouterOperateur("-");
+           
         }
 
         private void bntProduit_Click(object sender, EventArgs e)
         {
-            AjouterOperateur("×");
+           
         }
 
         private void bntDivision_Click(object sender, EventArgs e)
         {
-            AjouterOperateur("÷");
+           
         }
 
         // ===================== EGAL =====================
