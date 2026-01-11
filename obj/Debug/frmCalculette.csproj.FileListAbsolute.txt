@@ -1,0 +1,10 @@
+C:\Users\dell\source\repos\frmCalculette\bin\Debug\frmCalculette.exe.config
+C:\Users\dell\source\repos\frmCalculette\bin\Debug\frmCalculette.exe
+C:\Users\dell\source\repos\frmCalculette\bin\Debug\frmCalculette.pdb
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.Form1.resources
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.Properties.Resources.resources
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.csproj.GenerateResource.cache
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.exe
+C:\Users\dell\source\repos\frmCalculette\obj\Debug\frmCalculette.pdb
