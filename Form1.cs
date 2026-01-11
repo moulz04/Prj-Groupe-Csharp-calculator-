@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace frmCalculette
@@ -10,6 +11,19 @@ namespace frmCalculette
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void AjouterOperateur(string op)
+        {
+            if (estNouveauCalcul)
+                estNouveauCalcul = false;
+
+            char dernierCaractere = txtResult.Text[txtResult.Text.Length - 1];
+
+            if ("+-×÷".Contains(dernierCaractere.ToString()))
+                return;
+
+            txtResult.Text += op;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -57,12 +71,12 @@ namespace frmCalculette
 
         private void bntPlus_Click(object sender, EventArgs e)
         {
-           
+            AjouterOperateur("+");
         }
 
         private void bntMoin_Click(object sender, EventArgs e)
         {
-           
+            AjouterOperateur("-");
         }
 
         private void bntProduit_Click(object sender, EventArgs e)
@@ -72,13 +86,30 @@ namespace frmCalculette
 
         private void bntDivision_Click(object sender, EventArgs e)
         {
-           
+            AjouterOperateur("÷");
         }
 
         // ===================== EGAL =====================
         private void bntEgale_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string expression = txtResult.Text;
+                expression = expression.Replace("×", "*");
+                expression = expression.Replace("÷", "/");
+                expression = expression.Replace(",", ".");
 
+                DataTable table = new DataTable();
+                object resultat = table.Compute(expression, "");
+
+                txtResult.Text = Convert.ToDouble(resultat).ToString();
+                estNouveauCalcul = true;
+            }
+            catch
+            {
+                MessageBox.Show("Expression invalide", "Erreur");
+                txtResult.Text = "0";
+            }
         }
 
         // ===================== CLEAR =====================
