@@ -331,7 +331,7 @@
             this.bntEgale.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bntEgale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntEgale.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntEgale.Location = new System.Drawing.Point(326, 336);
+            this.bntEgale.Location = new System.Drawing.Point(328, 336);
             this.bntEgale.Name = "bntEgale";
             this.bntEgale.Size = new System.Drawing.Size(54, 60);
             this.bntEgale.TabIndex = 67;
